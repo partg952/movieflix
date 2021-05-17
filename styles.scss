@@ -1,0 +1,86 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:darkblue;    
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    // flex-wrap: wrap;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+   
+
+    .div{
+        margin-top: 10px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top:20px ;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 500px;
+        width: 300px;
+        background-color: blue;
+        transition: all 0.3s ease;
+        &:hover{
+            margin-top: -20px;
+        }
+        img{
+            height: 80%;
+            width: 100%;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                width: 30px;
+                height: 30px;
+                background-color: darkblue;
+                text-align: center;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                padding: 5px;
+            }
+        }
+        p{
+            margin: 10px;
+        }
+
+        
+        
+
+        
+    }
+}
+
+#nav{
+    
+    background-color: darkblue;
+    padding:   10px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+#search{
+    color: white;
+    box-shadow: 0px 0px 5px 0px black;
+    border: 0px solid transparent;
+    background-color: transparent;
+    padding: 0.5rem;
+    margin: 20px;
+    border-radius: 50px;
+
+    &::placeholder{
+        color: rgb(8, 8, 189);
+    }
+}
