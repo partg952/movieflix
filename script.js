@@ -3,7 +3,7 @@ function getMovie(){
     fetch(`https://api.themoviedb.org/3/discover/movie/?api_key=e1fa13c7e6a35b25826f92b2aea94264`)
     .then(res=>res.json())
     .then(movie=>{
-
+        console.log("hello world");
         console.log(movie)
         movie.results.forEach(info => {
             console.log(info.title)
